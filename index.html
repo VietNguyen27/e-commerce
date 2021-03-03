@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Website</title>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/lib/font-awesome/css/all.min.css" />
+    <!-- Elegant Icon -->
+    <link rel="stylesheet" href="./assets/lib/elegant-icon/elegant-icon.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/common/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">Fashion</a>
+        </div>
+        <ul class="header__menu">
+          <li class="header__menu-item header__menu-item--active">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li class="header__menu-item submenu">
+            <a href="#">Tất cả sản phẩm</a>
+            <div class="submenu__content">
+              <div class="submenu__inner">
+                <div class="submenu__megamenu">
+                  <div class="submenu__megamenu-item">
+                    <h3>Thời trang Nữ</h3>
+                    <ul>
+                      <li><a href="#">Đầm thời trang</a></li>
+                      <li><a href="#">Áo nữ</a></li>
+                      <li><a href="#">Áo khoác và áo len nữ</a></li>
+                      <li><a href="#">Quần nữ</a></li>
+                      <li><a href="#">Chân váy</a></li>
+                    </ul>
+                  </div>
+                  <div class="submenu__megamenu-item">
+                    <h3>Thời trang Nam</h3>
+                    <ul>
+                      <li><a href="#">Áo sơ mi nam</a></li>
+                      <li><a href="#">Áo thun nam</a></li>
+                      <li><a href="#">Áo khoác và áo len nam</a></li>
+                      <li><a href="#">Quần nam</a></li>
+                    </ul>
+                  </div>
+                  <div class="submenu__megamenu-item">
+                    <h3>Phụ kiện</h3>
+                    <ul>
+                      <li><a href="#">Kính mát</a></li>
+                      <li><a href="#">Thắt lưng</a></li>
+                      <li><a href="#">Khăn choàng</a></li>
+                      <li><a href="#">Vớ</a></li>
+                      <li><a href="#">Cravat</a></li>
+                      <li><a href="#">Phụ kiện khác</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="submenu__banner">
+                  <div class="submenu__banner__text">
+                    <h3>Bộ sưu tập mùa xuân</h3>
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                    <a class="btn" href="#">Xem tất cả</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="header__menu-item"><a href="#">Thông tin</a></li>
+          <li class="header__menu-item"><a href="#">Liên hệ</a></li>
+        </ul>
+        <div class="header__right">
+          <form class="header__right__search">
+            <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+            <button type="submit" class="btn">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
+          <ul class="header__right__widget">
+            <li>
+              <button class="btn"><span class="far fa-user"></span></button>
+            </li>
+            <li class="header__icon-cart">
+              <button class="btn"><span class="icon_bag_alt"></span></button>
+              <div class="header__total-cart">0</div>
+            </li>
+            <li>
+              <button class="btn"><span class="fas fa-bars"></span></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="categories__left">
+        <a href="#" class="categories__item">
+          <div
+            class="categories__img"
+            style="background-image: url('./assets/common/img/category-1.jpg')"
+          ></div>
+          <div class="categories__text">
+            <h1>Thời trang nữ</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              officia impedit asperiores. Delectus, harum suscipit.
+            </p>
+            <div class="categories__button">
+              <span>Xem ngay</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="categories__right">
+        <a href="#" class="categories__item">
+          <div
+            class="categories__img"
+            style="background-image: url('./assets/common/img/category-2.jpg')"
+          ></div>
+          <div class="categories__text">
+            <h1>Thời trang nam</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div class="categories__button">
+              <span>Xem ngay</span>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="categories__item">
+          <div
+            class="categories__img"
+            style="background-image: url('./assets/common/img/category-3.jpg')"
+          ></div>
+          <div class="categories__text">
+            <h1>Phụ kiện</h1>
+            <p>Lorem ipsum dolor sit.</p>
+            <div class="categories__button">
+              <span>Xem ngay</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- End of Categories -->
+
+    <!-- New Product -->
+    <section class="product">
+      <div class="wrapper">
+        <div class="product__top">
+          <h1 class="product__title">Sản phẩm mới</h1>
+          <ul class="product__filter">
+            <li>
+              <a
+                href="#"
+                class="product__filter-item product__filter-item--active"
+                >Tất cả</a
+              >
+            </li>
+            <li><a href="#" class="product__filter-item">Nam</a></li>
+            <li><a href="#" class="product__filter-item">Nữ</a></li>
+            <li><a href="#" class="product__filter-item">Phụ kiện</a></li>
+          </ul>
+        </div>
+        <div class="product__gallery">
+          <div class="product-item product-item--new">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-1.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Buttons tweed blazer</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 59.00</div>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-2.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Flowy striped skirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 49.00</div>
+            </div>
+          </div>
+          <div class="product-item product-item--stockout">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-3.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Cotton T-Shirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 59.00</div>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-4.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Slim striped pocket shirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 59.00</div>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-5.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Fit micro corduroy shirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 59.00</div>
+            </div>
+          </div>
+          <div class="product-item product-item--sale">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-6.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Tropical Kimono</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 49.00 <span>$ 59.00</span></div>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-7.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Contrasting sunglasses</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 59.00</div>
+            </div>
+          </div>
+          <div class="product-item product-item--sale">
+            <span class="product__tag"></span>
+            <div class="product__img">
+              <a href="#">
+                <img src="./assets/common/img/product-8.jpg" alt="" />
+              </a>
+              <ul>
+                <li><span class="arrow_expand"></span></li>
+                <li><span class="icon_heart_alt"></span></li>
+                <li><span class="icon_bag_alt"></span></li>
+              </ul>
+            </div>
+            <div class="product__text">
+              <a href="#" class="product__name">Water resistant backpack</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <div class="product__price">$ 49.00 <span>$ 59.00</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of New Product -->
+
+    <!-- Discount -->
+    <section class="discount">
+      <div class="discount__text">
+        <div class="discount__title">
+          <span>Khuyến mãi</span>
+          <h1>Mùa xuân 2021</h1>
+          <h3>Giảm giá <span>50%</span></h3>
+        </div>
+        <a href="#" class="btn btn--underline">Xem ngay</a>
+      </div>
+    </section>
+    <!-- End of Discount -->
+
+    <!-- Trend -->
+    <section class="trend">
+      <div class="wrapper">
+        <div class="trend-content">
+          <h1 class="trend__title">Xu hướng hiện nay</h1>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/ht-1.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Chain bucket bag</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/ht-2.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Pendant earrings</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/ht-3.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Cotton T-Shirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="trend-content">
+          <h1 class="trend__title">Bán chạy nhất</h1>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/bs-1.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Cotton T-Shirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/bs-2.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Metallic earrings</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/bs-3.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Round leather bag</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="trend-content">
+          <h1 class="trend__title">Giảm giá nhất</h1>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/f-1.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Bow wrap skirt</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/f-2.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name"
+                >Zip-pockets pebbled tote briefcase</a
+              >
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+          <div class="trend-item">
+            <a href="#">
+              <img src="./assets/common/img/f-3.jpg" alt="" />
+            </a>
+            <div class="trend__text">
+              <a href="#" class="trend__name">Flap cross-body bag</a>
+              <div class="rating">
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+                <span class="fas fa-star"></span>
+              </div>
+              <span class="trend__price">$ 59.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Trend -->
+
+    <!-- Services -->
+    <section class="services">
+      <div class="wrapper">
+        <div class="services-item">
+          <span class="fas fa-shipping-fast"></span>
+          <div class="services__text">
+            <h3>Vận chuyển miễn phí</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="services-item">
+          <span class="far fa-clock"></span>
+          <div class="services__text">
+            <h3>Giao hàng đúng giờ</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="services-item">
+          <span class="fas fa-headphones"></span>
+          <div class="services__text">
+            <h3>Hỗ trợ trực tuyến 24/7</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+        <div class="services-item">
+          <span class="fas fa-shield-alt"></span>
+          <div class="services__text">
+            <h3>Thanh toán an toàn</h3>
+            <p>Lorem ipsum dolor sit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <h1 class="footer__title">
+          <span>Hỗ trợ - Chính sách mua hàng</span>
+        </h1>
+        <div class="footer__top">
+          <div class="footer__top-item">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+              <li><a href="#">Phương thức thanh toán</a></li>
+              <li><a href="#">Chính sách giao hàng</a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h3>Chính sách mua hàng</h3>
+            <ul>
+              <li><a href="#">Chính sách đổi hàng</a></li>
+              <li><a href="#">Chính sách trả hàng</a></li>
+              <li><a href="#">Chính sách thanh toán</a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h3>Liên hệ</h3>
+            <ul>
+              <li><a href="#">Thông tin liên hệ</a></li>
+              <li><a href="#">Hệ thống cửa hàng</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Tin tức</a></li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <div class="logo">
+              <a href="#">Fashion</a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              nesciunt non ea inventore autem vel eaque earum atque, ad libero
+              quibusdam a quidem excepturi dicta?
+            </p>
+            <div class="footer__payment">
+              <img src="./assets/common/img/payment-method.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="wrapper">
+          <p>Copyright &copy; 2021. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>
