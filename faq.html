@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/lib/font-awesome/css/all.min.css" />
+    <!-- Elegant Icon -->
+    <link rel="stylesheet" href="./assets/lib/elegant-icon/elegant-icon.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/common/css/style.css" />
+    <title>FAQs | Fashion Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <a class="logo" href="#">Fashion</a>
+        <div class="navbar--toggle">
+          <form
+            class="header__right__search navbar-toggler d-none d-lg-none d-sm-block"
+          >
+            <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+            <button type="submit" class="btn">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
+          <ul class="header__right__widget">
+            <li class="navbar-toggler">
+              <button class="btn"><span class="far fa-user"></span></button>
+            </li>
+            <li class="navbar-toggler position-relative">
+              <button class="btn">
+                <span class="icon_heart_alt"></span>
+              </button>
+              <div class="header__total-wishlist">0</div>
+            </li>
+            <li class="navbar-toggler position-relative">
+              <button class="btn"><span class="icon_bag_alt"></span></button>
+              <div class="header__total-cart">0</div>
+            </li>
+            <li>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+              >
+                <span class="fas fa-bars"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link btn btn-primary" href="index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item submenu position-relative">
+              <a class="nav-link btn btn-primary" href="product.html"
+                >Tất cả sản phẩm</a
+              >
+              <div class="submenu__content d-none d-lg-block">
+                <div class="submenu__inner">
+                  <div class="row">
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Thời trang Nữ</h3>
+                      <ul>
+                        <li><a class="link" href="#">Đầm thời trang</a></li>
+                        <li><a class="link" href="#">Áo sơ mi nữ</a></li>
+                        <li>
+                          <a class="link" href="#">Áo khoác và áo len nữ</a>
+                        </li>
+                        <li><a class="link" href="#">Quần nữ</a></li>
+                        <li><a class="link" href="#">Chân váy</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Thời trang Nam</h3>
+                      <ul>
+                        <li><a class="link" href="#">Áo sơ mi nam</a></li>
+                        <li><a class="link" href="#">Áo thun nam</a></li>
+                        <li>
+                          <a class="link" href="#">Áo khoác và áo len nam</a>
+                        </li>
+                        <li><a class="link" href="#">Quần nam</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Phụ kiện</h3>
+                      <ul>
+                        <li><a class="link" href="#">Kính mát</a></li>
+                        <li><a class="link" href="#">Thắt lưng</a></li>
+                        <li><a class="link" href="#">Khăn choàng</a></li>
+                        <li><a class="link" href="#">Vớ</a></li>
+                        <li><a class="link" href="#">Cravat</a></li>
+                        <li><a class="link" href="#">Phụ kiện khác</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="submenu__banner">
+                    <div class="submenu__banner__text">
+                      <h3>Bộ sưu tập mùa xuân</h3>
+                      <h1>Lorem ipsum dolor sit amet.</h1>
+                      <a class="btn" href="#">Xem tất cả</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary btn-primary--active"
+                href="faq.html"
+                >Faqs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="contact.html"
+                >Liên hệ</a
+              >
+            </li>
+          </ul>
+          <div class="header__right">
+            <form class="header__right__search d-block d-lg-block d-sm-none">
+              <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+              <button type="submit" class="btn">
+                <span class="fas fa-search"></span>
+              </button>
+            </form>
+            <ul class="header__right__widget d-lg-flex d-none">
+              <li>
+                <button class="btn"><span class="far fa-user"></span></button>
+              </li>
+              <li class="position-relative">
+                <button class="btn">
+                  <span class="icon_heart_alt"></span>
+                </button>
+                <div class="header__total-wishlist">0</div>
+              </li>
+              <li class="position-relative">
+                <button class="btn"><span class="icon_bag_alt"></span></button>
+                <div class="header__total-cart">0</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Breadcrumb -->
+    <nav>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">
+              <span class="icon_house_alt"></span> Trang chủ
+            </a>
+          </li>
+          <li class="breadcrumb-item active">FAQs</li>
+        </ol>
+      </div>
+    </nav>
+    <!-- End of Breadcrumb -->
+
+    <!-- FAQs -->
+    <section class="faq">
+      <div class="container">
+        <h1 class="text-center">Những câu hỏi thường gặp (FAQs)</h1>
+        <div class="accordion" id="accordionFaq">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                >
+                  Tôi có thể mua hàng bằng cách nào?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse" data-parent="#accordion-faq">
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi sequi magni, incidunt iure laboriosam quam accusamus
+                  consectetur, porro laudantium explicabo nesciunt vero. Dolor
+                  quidem fugiat porro perferendis inventore pariatur voluptatum
+                  ducimus quibusdam tempore deleniti harum expedita sapiente,
+                  eum officia rem odit, accusamus corrupti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                >
+                  Phí giao hàng khi mua Online như thế nào?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion-faq">
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>
+                  Assumenda culpa, maiores quidem fugiat quas, sed qui modi aut
+                  neque numquam quis rerum possimus ullam nobis esse facere
+                  ratione vero unde distinctio ipsa? Magni quisquam corrupti
+                  ducimus voluptates itaque saepe vel, et perspiciatis
+                  aspernatur ea, libero esse rem. Aut, quia placeat.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                >
+                  Thời gian giao hàng?
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              data-parent="#accordion-faq"
+            >
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat numquam eum nam ullam consectetur accusamus
+                  necessitatibus officiis inventore error possimus?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseFour"
+                >
+                  Thời gian đổi trả hàng?
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseFour"
+              class="collapse"
+              data-parent="#accordion-faq"
+            >
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p>
+                  Facilis impedit dolor, rem hic molestiae ex omnis totam
+                  repellat sed, doloremque libero possimus pariatur numquam? Cum
+                  at dolores natus error, quis alias quos soluta ipsum sequi
+                  aliquam commodi voluptate doloremque vel optio eveniet
+                  voluptatem nam odio exercitationem voluptatibus id laboriosam
+                  corrupti temporibus, dignissimos nulla? Doloribus, mollitia
+                  totam delectus cumque expedita nobis.
+                </p>
+                <p>
+                  Adipisicing elit. Quaerat minus sequi tempora id iusto, eum
+                  voluptates quos quas minima illum suscipit beatae vel
+                  inventore. Delectus in voluptates porro labore dolores.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                >
+                  Tôi có thể thanh toán bằng những phương thức thanh toán nào?
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseFive"
+              class="collapse"
+              data-parent="#accordion-faq"
+            >
+              <div class="card-body">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                  facilis.
+                </p>
+                <p>
+                  Sit amet, consectetur adipisicing elit. Ullam sunt assumenda
+                  dolorum placeat dolore, et aperiam deleniti, voluptatem amet
+                  doloremque provident possimus numquam natus, ratione
+                  praesentium! Saepe sit a quae et quidem dolorem repudiandae!
+                  Ipsam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSix">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseSix"
+                >
+                  Các vấn đề khi đổi trả hàng?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseSix" class="collapse" data-parent="#accordion-faq">
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque ipsam impedit praesentium hic quis delectus, iure cum
+                  doloremque dolore dolores earum rerum accusamus assumenda
+                  adipisci. Provident nihil ducimus at, deserunt delectus dolor
+                  voluptate repellat modi!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingSeven">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseSeven"
+                >
+                  Làm sao để hủy đơn hàng khi đã đặt hàng?
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseSeven"
+              class="collapse"
+              data-parent="#accordion-faq"
+            >
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Neque ipsam impedit praesentium hic quis delectus, iure cum
+                  doloremque dolore dolores earum rerum accusamus assumenda
+                  adipisci. Provident nihil ducimus at, deserunt delectus dolor
+                  voluptate repellat modi!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum omnis sit, voluptatibus corrupti deleniti quam?
+                </p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                  magni possimus facilis explicabo molestiae similique dolorum
+                  ullam harum consequuntur, fuga est vero incidunt qui
+                  necessitatibus?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingEight">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseEight"
+                >
+                  Tại sao đơn hàng của tôi bị hủy?
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseEight"
+              class="collapse"
+              data-parent="#accordion-faq"
+            >
+              <div class="card-body">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Veniam vitae reprehenderit saepe, temporibus delectus nobis
+                  quaerat voluptatum quam voluptas id beatae consectetur
+                  repudiandae optio tempora maiores magni dolore. Eius deleniti
+                  ea similique? Commodi porro ea fugiat atque, doloribus natus
+                  rem id accusantium adipisci fugit dolorum, asperiores magnam,
+                  quis error similique perferendis fuga amet eius.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of FAQs -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h1 class="footer__title">Hỗ trợ - Chính sách mua hàng</h1>
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                  <li><a class="link" href="#">Phương thức thanh toán</a></li>
+                  <li><a class="link" href="#">Chính sách giao hàng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Chính sách mua hàng</h3>
+                <ul>
+                  <li><a class="link" href="#">Chính sách đổi hàng</a></li>
+                  <li><a class="link" href="#">Chính sách trả hàng</a></li>
+                  <li><a class="link" href="#">Chính sách thanh toán</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Liên hệ</h3>
+                <ul>
+                  <li><a class="link" href="#">Thông tin liên hệ</a></li>
+                  <li><a class="link" href="#">Hệ thống cửa hàng</a></li>
+                  <li><a class="link" href="#">Giới thiệu</a></li>
+                  <li><a class="link" href="#">Tin tức</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <a href="index.html" class="logo">Fashion</a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti nesciunt non ea inventore autem vel eaque earum
+                  atque, ad libero quibusdam a quidem excepturi dicta?
+                </p>
+                <img
+                  src="./assets/common/img/payment-method.png"
+                  alt="Payment method"
+                  class="footer__payment"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">Copyright &copy; 2021. All right reserved.</div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="./assets/lib/bootstrap/assets/js/jquery-slim.min.js"></script>
+    <script src="./assets/lib/bootstrap/assets/js/popper.min.js"></script>
+    <script src="./assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

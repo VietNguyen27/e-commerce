@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/lib/font-awesome/css/all.min.css" />
+    <!-- Elegant Icon -->
+    <link rel="stylesheet" href="./assets/lib/elegant-icon/elegant-icon.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/common/css/style.css" />
+    <title>Liên hệ | Fashion Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <a class="logo" href="index.html">Fashion</a>
+        <div class="navbar--toggle">
+          <form
+            class="header__right__search navbar-toggler d-none d-lg-none d-sm-block"
+          >
+            <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+            <button type="submit" class="btn">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
+          <ul class="header__right__widget">
+            <li class="navbar-toggler">
+              <button class="btn"><span class="far fa-user"></span></button>
+            </li>
+            <li class="navbar-toggler position-relative">
+              <button class="btn">
+                <span class="icon_heart_alt"></span>
+              </button>
+              <div class="header__total-wishlist">0</div>
+            </li>
+            <li class="navbar-toggler position-relative">
+              <button class="btn"><span class="icon_bag_alt"></span></button>
+              <div class="header__total-cart">0</div>
+            </li>
+            <li>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+              >
+                <span class="fas fa-bars"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link btn btn-primary" href="index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item submenu position-relative">
+              <a class="nav-link btn btn-primary" href="product.html"
+                >Tất cả sản phẩm</a
+              >
+              <div class="submenu__content d-none d-lg-block">
+                <div class="submenu__inner">
+                  <div class="row">
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Thời trang Nữ</h3>
+                      <ul>
+                        <li><a class="link" href="#">Đầm thời trang</a></li>
+                        <li><a class="link" href="#">Áo sơ mi nữ</a></li>
+                        <li>
+                          <a class="link" href="#">Áo khoác và áo len nữ</a>
+                        </li>
+                        <li><a class="link" href="#">Quần nữ</a></li>
+                        <li><a class="link" href="#">Chân váy</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Thời trang Nam</h3>
+                      <ul>
+                        <li><a class="link" href="#">Áo sơ mi nam</a></li>
+                        <li><a class="link" href="#">Áo thun nam</a></li>
+                        <li>
+                          <a class="link" href="#">Áo khoác và áo len nam</a>
+                        </li>
+                        <li><a class="link" href="#">Quần nam</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Phụ kiện</h3>
+                      <ul>
+                        <li><a class="link" href="#">Kính mát</a></li>
+                        <li><a class="link" href="#">Thắt lưng</a></li>
+                        <li><a class="link" href="#">Khăn choàng</a></li>
+                        <li><a class="link" href="#">Vớ</a></li>
+                        <li><a class="link" href="#">Cravat</a></li>
+                        <li><a class="link" href="#">Phụ kiện khác</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="submenu__banner">
+                    <div class="submenu__banner__text">
+                      <h3>Bộ sưu tập mùa xuân</h3>
+                      <h1>Lorem ipsum dolor sit amet.</h1>
+                      <a class="btn" href="#">Xem tất cả</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="faq.html">Faqs</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary btn-primary--active"
+                href="contact.html"
+                >Liên hệ</a
+              >
+            </li>
+          </ul>
+          <div class="header__right">
+            <form class="header__right__search d-block d-lg-block d-sm-none">
+              <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+              <button type="submit" class="btn">
+                <span class="fas fa-search"></span>
+              </button>
+            </form>
+            <ul class="header__right__widget d-lg-flex d-none">
+              <li>
+                <button class="btn"><span class="far fa-user"></span></button>
+              </li>
+              <li class="position-relative">
+                <button class="btn">
+                  <span class="icon_heart_alt"></span>
+                </button>
+                <div class="header__total-wishlist">0</div>
+              </li>
+              <li class="position-relative">
+                <button class="btn"><span class="icon_bag_alt"></span></button>
+                <div class="header__total-cart">0</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Breadcrumb -->
+    <nav>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">
+              <span class="icon_house_alt"></span> Trang chủ
+            </a>
+          </li>
+          <li class="breadcrumb-item active">Liên hệ</li>
+        </ol>
+      </div>
+    </nav>
+    <!-- End of Breadcrumb -->
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              id="map-container-google-12"
+              class="z-depth-1-half map-container-7"
+              style="height: 500px"
+            >
+              <iframe
+                src="https://maps.google.com/maps?q=Danang&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                style="width: 100%; height: 100%"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="contact__text">
+              <h1 class="title">Thông tin liên lạc</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                fuga eos dolorem dolorum possimus molestias doloribus beatae
+                fugit ex illo.
+              </p>
+              <div class="contact__widget">
+                <div class="contact__widget-item">
+                  <span class="icon_pin_alt"></span>
+                  <div class="contact__widget__text">
+                    <h3>Địa chỉ:</h3>
+                    <p>63 Đường, Quận Ngũ Hành Sơn, TP.Đà Nẵng</p>
+                  </div>
+                </div>
+                <div class="contact__widget-item">
+                  <span class="icon_mobile"></span>
+                  <div class="contact__widget__text">
+                    <h3>Hotline:</h3>
+                    <p>+84 987 415 263</p>
+                  </div>
+                </div>
+                <div class="contact__widget-item">
+                  <span class="icon_mail_alt"></span>
+                  <div class="contact__widget__text">
+                    <h3>Email:</h3>
+                    <p>example.contact@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <form class="contact__form">
+              <h1 class="title">Gửi phản hồi cho chúng tôi</h1>
+              <p>
+                Chúng tôi sẽ tiếp nhận phản hồi của bạn và liên lạc sớm nhất có
+                thể.
+              </p>
+              <div class="row">
+                <div class="col-xl-12">
+                  <input type="text" placeholder="Họ và tên" />
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                  <input type="text" placeholder="Số điện thoại" />
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                  <input type="email" placeholder="Email" />
+                </div>
+                <div class="col-xl-12">
+                  <textarea
+                    name="feedback"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Nội dung"
+                  ></textarea>
+                  <button class="btn btn-secondary">Gửi phản hồi</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h1 class="footer__title">Hỗ trợ - Chính sách mua hàng</h1>
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                  <li><a class="link" href="#">Phương thức thanh toán</a></li>
+                  <li><a class="link" href="#">Chính sách giao hàng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Chính sách mua hàng</h3>
+                <ul>
+                  <li><a class="link" href="#">Chính sách đổi hàng</a></li>
+                  <li><a class="link" href="#">Chính sách trả hàng</a></li>
+                  <li><a class="link" href="#">Chính sách thanh toán</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Liên hệ</h3>
+                <ul>
+                  <li><a class="link" href="#">Thông tin liên hệ</a></li>
+                  <li><a class="link" href="#">Hệ thống cửa hàng</a></li>
+                  <li><a class="link" href="#">Giới thiệu</a></li>
+                  <li><a class="link" href="#">Tin tức</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <a href="index.html" class="logo">Fashion</a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti nesciunt non ea inventore autem vel eaque earum
+                  atque, ad libero quibusdam a quidem excepturi dicta?
+                </p>
+                <img
+                  src="./assets/common/img/payment-method.png"
+                  alt="Payment method"
+                  class="footer__payment"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">Copyright &copy; 2021. All right reserved.</div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="./assets/lib/bootstrap/assets/js/jquery-slim.min.js"></script>
+    <script src="./assets/lib/bootstrap/assets/js/popper.min.js"></script>
+    <script src="./assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="./assets/lib/font-awesome/css/all.min.css" />
+    <!-- Elegant Icon -->
+    <link rel="stylesheet" href="./assets/lib/elegant-icon/elegant-icon.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/lib/bootstrap/css/bootstrap.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/common/css/style.css" />
+    <title>Sản phẩm | Fashion Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <a class="logo" href="index.html">Fashion</a>
+        <div class="navbar--toggle">
+          <form
+            class="header__right__search navbar-toggler d-none d-lg-none d-sm-block"
+          >
+            <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+            <button type="submit" class="btn">
+              <span class="fas fa-search"></span>
+            </button>
+          </form>
+          <ul class="header__right__widget">
+            <li class="navbar-toggler">
+              <button class="btn"><span class="far fa-user"></span></button>
+            </li>
+            <li class="navbar-toggler position-relative">
+              <button class="btn">
+                <span class="icon_heart_alt"></span>
+              </button>
+              <div class="header__total-wishlist">0</div>
+            </li>
+            <li class="navbar-toggler position-relative">
+              <button class="btn"><span class="icon_bag_alt"></span></button>
+              <div class="header__total-cart">0</div>
+            </li>
+            <li>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+              >
+                <span class="fas fa-bars"></span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link btn btn-primary" href="index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item submenu position-relative">
+              <a
+                class="nav-link btn btn-primary btn-primary--active"
+                href="product.html"
+                >Tất cả sản phẩm</a
+              >
+              <div class="submenu__content d-none d-lg-block">
+                <div class="submenu__inner">
+                  <div class="row">
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Thời trang Nữ</h3>
+                      <ul>
+                        <li><a class="link" href="#">Đầm thời trang</a></li>
+                        <li><a class="link" href="#">Áo sơ mi nữ</a></li>
+                        <li>
+                          <a class="link" href="#">Áo khoác và áo len nữ</a>
+                        </li>
+                        <li><a class="link" href="#">Quần nữ</a></li>
+                        <li><a class="link" href="#">Chân váy</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Thời trang Nam</h3>
+                      <ul>
+                        <li><a class="link" href="#">Áo sơ mi nam</a></li>
+                        <li><a class="link" href="#">Áo thun nam</a></li>
+                        <li>
+                          <a class="link" href="#">Áo khoác và áo len nam</a>
+                        </li>
+                        <li><a class="link" href="#">Quần nam</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-4 submenu-item">
+                      <h3>Phụ kiện</h3>
+                      <ul>
+                        <li><a class="link" href="#">Kính mát</a></li>
+                        <li><a class="link" href="#">Thắt lưng</a></li>
+                        <li><a class="link" href="#">Khăn choàng</a></li>
+                        <li><a class="link" href="#">Vớ</a></li>
+                        <li><a class="link" href="#">Cravat</a></li>
+                        <li><a class="link" href="#">Phụ kiện khác</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="submenu__banner">
+                    <div class="submenu__banner__text">
+                      <h3>Bộ sưu tập mùa xuân</h3>
+                      <h1>Lorem ipsum dolor sit amet.</h1>
+                      <a class="btn" href="#">Xem tất cả</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="faq.html">Faqs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="contact.html"
+                >Liên hệ</a
+              >
+            </li>
+          </ul>
+          <div class="header__right">
+            <form class="header__right__search d-block d-lg-block d-sm-none">
+              <input type="text" placeholder="Tìm kiếm..." autocomplete="off" />
+              <button type="submit" class="btn">
+                <span class="fas fa-search"></span>
+              </button>
+            </form>
+            <ul class="header__right__widget d-lg-flex d-none">
+              <li>
+                <button class="btn"><span class="far fa-user"></span></button>
+              </li>
+              <li class="position-relative">
+                <button class="btn">
+                  <span class="icon_heart_alt"></span>
+                </button>
+                <div class="header__total-wishlist">0</div>
+              </li>
+              <li class="position-relative">
+                <button class="btn"><span class="icon_bag_alt"></span></button>
+                <div class="header__total-cart">0</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Breadcrumb -->
+    <nav>
+      <div class="container">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="index.html">
+              <span class="icon_house_alt"></span> Trang chủ
+            </a>
+          </li>
+          <li class="breadcrumb-item active">Sản phẩm</li>
+        </ol>
+      </div>
+    </nav>
+    <!-- End of Breadcrumb -->
+
+    <!-- Product -->
+    <section class="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="product__categories">
+              <h3 class="title">Danh mục</h3>
+              <div class="accordion" id="accordionCategories">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                      >
+                        Thời trang nữ
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseOne" class="collapse">
+                    <div class="card-body">
+                      <div class="filter-widget">
+                        <div class="fw-item">
+                          <label for="pd-dress">
+                            Đầm thời trang
+                            <input type="checkbox" id="pd-dress" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-w-shirt">
+                            Áo sơ mi nữ
+                            <input type="checkbox" id="pd-w-shirt" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-w-coat-sweater">
+                            Áo khoác và áo len nữ
+                            <input type="checkbox" id="pd-w-coat-sweater" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-w-trousers">
+                            Quần nữ
+                            <input type="checkbox" id="pd-w-trousers" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-skirt">
+                            Chân váy
+                            <input type="checkbox" id="pd-skirt" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                      >
+                        Thời trang nam
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse">
+                    <div class="card-body">
+                      <div class="filter-widget">
+                        <div class="fw-item">
+                          <label for="pd-m-shirt">
+                            Áo sơ mi nam
+                            <input type="checkbox" id="pd-m-shirt" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-m-tshirt">
+                            Áo thun nam
+                            <input type="checkbox" id="pd-m-tshirt" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-m-coat-sweater">
+                            Áo khoác và áo len nam
+                            <input type="checkbox" id="pd-m-coat-sweater" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-m-trousers">
+                            Quần nam
+                            <input type="checkbox" id="pd-m-trousers" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                      >
+                        Phụ kiện
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse">
+                    <div class="card-body">
+                      <div class="filter-widget">
+                        <div class="fw-item">
+                          <label for="pd-sunglasses">
+                            Kính mát
+                            <input type="checkbox" id="pd-sunglasses" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-belt">
+                            Thắt lưng
+                            <input type="checkbox" id="pd-belt" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-scarf">
+                            Khăn choàng
+                            <input type="checkbox" id="pd-scarf" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-sock">
+                            Vớ
+                            <input type="checkbox" id="pd-sock" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-cravat">
+                            Cravat
+                            <input type="checkbox" id="pd-cravat" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="pd-others">
+                            Phụ kiện khác
+                            <input type="checkbox" id="pd-others" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h3 class="title">Bộ lọc</h3>
+              <div class="accordion" id="accordionFilter">
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                      >
+                        Sắp xếp theo
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div id="collapseFour" class="collapse">
+                    <div class="card-body">
+                      <div class="filter-widget">
+                        <div class="fw-item">
+                          <label for="fw-default">
+                            Mặc định
+                            <input type="checkbox" id="fw-default" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-popular">
+                            Phổ biến nhất
+                            <input type="checkbox" id="fw-popular" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-newness">
+                            Mới nhất
+                            <input type="checkbox" id="fw-newness" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-asc">
+                            Giá: Thấp đến Cao
+                            <input type="checkbox" id="fw-asc" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-desc">
+                            Giá: Cao đến Thấp
+                            <input type="checkbox" id="fw-desc" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                      >
+                        Giá tiền
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseFive" class="collapse">
+                    <div class="card-body">
+                      <div class="slider-range">
+                        <div class="track"></div>
+                        <div class="range"></div>
+                        <div class="thumb thumb-left"></div>
+                        <div class="thumb thumb-right"></div>
+                      </div>
+                      <div class="slider-info">
+                        <span>0đ</span>
+                        <span>10.000.000đ</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link btn-block text-left collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseSix"
+                      >
+                        Size
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseSix" class="collapse">
+                    <div class="card-body">
+                      <div class="filter-widget">
+                        <div class="fw-item">
+                          <label for="fw-size-xs">
+                            XS
+                            <input type="checkbox" id="fw-size-xs" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-size-s">
+                            S
+                            <input type="checkbox" id="fw-size-s" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-size-m">
+                            M
+                            <input type="checkbox" id="fw-size-m" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-size-l">
+                            L
+                            <input type="checkbox" id="fw-size-l" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-size-xl">
+                            XL
+                            <input type="checkbox" id="fw-size-xl" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                        <div class="fw-item">
+                          <label for="fw-size-xxl">
+                            XXL
+                            <input type="checkbox" id="fw-size-xxl" />
+                            <div class="checkmark"></div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9">
+            <div class="product__gallery">
+              <div class="row">
+                <div class="col-6 col-lg-4">
+                  <div class="product-item product-item--new">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-1.jpg"
+                          alt="Buttons tweed blazer"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Buttons tweed blazer</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">$ 59.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-2.jpg"
+                          alt="Flowy striped skirt"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Flowy striped skirt</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">$ 49.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item product-item--stockout">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-3.jpg"
+                          alt="Cotton T-Shirt"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Cotton T-Shirt</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">$ 59.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-4.jpg"
+                          alt="Slim striped pocket shirt"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Slim striped pocket shirt</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">$ 59.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-5.jpg"
+                          alt="Fit micro corduroy shirt"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Fit micro corduroy shirt</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">$ 59.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item product-item--sale">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-6.jpg"
+                          alt="Tropical Kimono"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Tropical Kimono</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">
+                        $ 49.00 <span>$ 59.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-7.jpg"
+                          alt="Contrasting sunglasses"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Contrasting sunglasses</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">$ 59.00</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="product-item product-item--sale">
+                    <span class="product__tag"></span>
+                    <div class="product__img">
+                      <a href="#">
+                        <img
+                          src="./assets/common/img/product-8.jpg"
+                          alt="Water resistant backpack"
+                        />
+                      </a>
+                      <ul>
+                        <li><span class="arrow_expand"></span></li>
+                        <li><span class="icon_heart_alt"></span></li>
+                        <li><span class="icon_bag_alt"></span></li>
+                      </ul>
+                    </div>
+                    <div class="text-center pt-2">
+                      <a href="#" class="link">Water resistant backpack</a>
+                      <div class="rating">
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                        <span class="fas fa-star"></span>
+                      </div>
+                      <div class="product__price">
+                        $ 49.00 <span>$ 59.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">
+                    <span class="fas fa-angle-left"></span>
+                  </a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">
+                    <span class="fas fa-angle-right"></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Product -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h1 class="footer__title">Hỗ trợ - Chính sách mua hàng</h1>
+        <div class="footer__top">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                  <li><a class="link" href="#">Phương thức thanh toán</a></li>
+                  <li><a class="link" href="#">Chính sách giao hàng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Chính sách mua hàng</h3>
+                <ul>
+                  <li><a class="link" href="#">Chính sách đổi hàng</a></li>
+                  <li><a class="link" href="#">Chính sách trả hàng</a></li>
+                  <li><a class="link" href="#">Chính sách thanh toán</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <h3>Liên hệ</h3>
+                <ul>
+                  <li><a class="link" href="#">Thông tin liên hệ</a></li>
+                  <li><a class="link" href="#">Hệ thống cửa hàng</a></li>
+                  <li><a class="link" href="#">Giới thiệu</a></li>
+                  <li><a class="link" href="#">Tin tức</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer__top-item">
+                <a href="index.html" class="logo">Fashion</a>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti nesciunt non ea inventore autem vel eaque earum
+                  atque, ad libero quibusdam a quidem excepturi dicta?
+                </p>
+                <img
+                  src="./assets/common/img/payment-method.png"
+                  alt="Payment method"
+                  class="footer__payment"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">Copyright &copy; 2021. All right reserved.</div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="./assets/lib/bootstrap/assets/js/jquery-slim.min.js"></script>
+    <script src="./assets/lib/bootstrap/assets/js/popper.min.js"></script>
+    <script src="./assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./assets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
